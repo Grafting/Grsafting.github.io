@@ -1,10 +1,57 @@
 <!DOCTYPE html>
+<html lang="en">
+    <title> Cryptocurrency </title>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="technical analysis of the value of the cryptocurrencies">
+    <meta name="keywords" content="crypto analysis change in value cryptocurrency bitcoin ethereum bitcoin cash ripple cryptocurrencies technical analysis wave theory">
+    <script type=text/javascript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#menu > li').on('click', 'a', function(){
+                var path = $(this).attr('href');
+                if(path!='' && path!='#'){
+                    $(".inner-content").load(this.href);
+                    return false;
+                    }
+                });
+            });
+    </script>
+   
+    
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+    <body>
+        
+        <div class="wrapper">
+        
+            <div class="header">
+                <div class="inner-header">
+                    <h1>Analysis of crypto-currencies</h1>
+                        by ZeR0-Gr0uPe
+                </div>
+            </div>
+            <div class="row">
+                <div class="sidebar-left">
+                    <div class="inner-sidebar-left">
+                    Archive:
+                        <ul id="menu">
+                            <li><a href="Archive/2018-06-30/2018-06-30.html">2018-06-30</a></li>
+                            <li><a href="Archive/2018-06-25/2018-06-25.html">2018-06-25</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner-content">
+                        
+                    </div>
+                </div>
+                <div class="sidebar-right">
+                    <div class="inner-sidebar-right">Commercial</div>
+                </div>
+            </div>
+                  
+        </div>
 
-<html>
-	<head>
-		<title> hello, world </title>
-	</head>
-	<body>
-		hello, world
-	<body>
+    </body>
 </html>
